@@ -1,0 +1,75 @@
+body{
+	background-color: #232323;
+	margin:0;
+	font-family: "Montserrat","Avenir";
+}
+
+.square {
+	width :30%;
+	background: #3722ff;
+	padding-bottom: 30%;
+	float:left;  /*  ****************** important . changes  the squares to float left i.e  gravity shifted left */
+	margin:1.66%;
+	border-radius: 15%;  /* this gives that curved effect. radius =50% ,100% will give full circle*/
+	transition: background 0.6s; /* it comes into effect when the backgrund of .square changes and is delayed by 0.6s*/
+	--webkit-transition: background 0.6s;  /* this is done for compability with  browsers using web engine*/
+	-moz-transition: background 0.6s; /* this is done for compability with mozilla */
+
+
+}
+
+#container {
+	max-width: 600px;
+	margin:20px auto;
+}
+
+h1 {
+	background-color: steelblue;
+	line-height: 1.1;
+	color :white;
+	text-align: center;
+	margin:0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message{
+	display: inline-block;  
+	width:20%;
+}
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+.selected {
+	color:white;
+	background-color: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color:steelblue;
+	letter-spacing: 1px;
+	transition: all 0.3s;  /* it comes into effect when any property of reset changes and is delayed by 0.3s*/
+	--webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+
+button:hover {   /* for hovering over button  obv*/
+	color:white;
+	background-color: steelblue;
+}
